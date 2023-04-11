@@ -11,10 +11,10 @@ public class FactorialController {
 
     @GetMapping("/")
     public String getFactorial(@RequestParam Integer n){
-        int factorial = 1;
+        long factorial = 1;
         for(int i = 1; i<=n; i++){
             factorial = factorial * i;
         }
-        return "the " + n + "factorial is " + factorial;
+        return "the " + n + " factorial is " + factorial;
     }
 }
