@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 public class FactorialController {
 
     @GetMapping("/{n}")
-    public String getFactorial(@PathVariable(required = false, value = "n") Integer n){
+    public String getFactorial(@PathVariable(required = false, value = "n") int n){
         long factorial = 1;
         for(int i = 1; i<=n; i++){
             factorial = factorial * i;
